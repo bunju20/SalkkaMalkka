@@ -20,8 +20,13 @@ strong {
 
 .container {
 	width: 90vw;
+	background-color: #FFFFFF;
+	max-width: 500px;
 	margin: 0 auto;
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .main__img {
@@ -32,11 +37,23 @@ strong {
 }
 
 .result__city {
+	/* 맥북프로 */
 	margin: 1rem;
-	font-size: 1.3rem;
-	font-weight: bold;
+	text-align: center;
+	font-family: 'Jalnan2TTF';
+	font-size: 28px;
+}
+.result__share{
+	font-family: 'Jalnan2TTF';
+	font-size: 18px;
+	text-align: center;
+}
+
+.result__device_detail{
 	text-align: center;
 	color: #4e4e4e;
+	font-family: 'Jalnan2TTF';
+	font-size: 18px;
 }
 
 .result__type {
@@ -46,7 +63,7 @@ strong {
 	text-align: center;
 	color: #4e4e4e;
 }
-.reust__title h2 {
+.result__title h2 {
 	display: flex;
 	justify-content: center;
 	font-size: 1.2rem;
@@ -56,7 +73,7 @@ strong {
 
 /* Tag.module.css */
 .tag {
-	width: 30%;
+	width: 119px;
 	height: 36px;
 	border-radius: 400px; /* 높은 값을 주어 완전한 둥근 모서리를 만듭니다 */
 	background-color: #007BFF; /* 태그의 배경색 */
@@ -74,20 +91,30 @@ strong {
 	justify-content: center;
 }
 .result__list__box{
-	padding: 20px 18px;
+	width: "100%";
+	max-width: 500px;
 	background-color: #F2F2F2;
 	border-radius: 12px;
-	margin: 14px 0;
+	margin: 14px 0 0 0;
 }
 
+.wrap__all{
+	background-color: #F2F2F2;
+}
 .result__style__wrapper {
 	list-style: disc;
+	margin: 20px 0;
 }
 .result__style__detail {
+
 	padding: 0.5rem;
 	list-style-position: inside;
     text-indent: -1.3em; /* 불릿이 위치한 첫 줄을 왼쪽으로 당겨서 불릿과 텍스트 사이의 간격 조정 */
-    margin-left: 1em; 
+    margin-left: 2em; 
+	font-family: 'AppleSDGothicNeo';
+	font-weight: 'bold';
+	font-size: 16;
+	color: #4A4A4A;
 	
 }
 
@@ -96,7 +123,7 @@ strong {
 	flex-direction: row;
 	gap: 24px;
 	justify-content: center;
-	margin-top: 4rem;
+	margin-top: 48px;
 	padding: 0 24px;
 
 
@@ -120,11 +147,19 @@ strong {
 	text-align: center;
 	font-weight: bold;
 	color: #4e4e4e;
+	font-family: 'Jalnan2TTF';
+	font-size: 18px;
+	padding: 0 0 14px 0;
+
 }
 .result__advice p {
 	margin: 1rem 0 1rem 0;
 	font-size: 14px;
 	text-align: center;
+	font-family: 'AppleSDGothicNeo';
+	font-size: 16px;
+	font-weight: bold;
+
 }
 
 .button__box {
@@ -180,36 +215,3 @@ strong {
 	justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-	html,
-	.wrapper {
-		background-color: #e8e7e6;
-		text-align: center;
-	}
-	.container {
-		width: 768px;
-		box-sizing: border-box;
-		background: white;
-		border-radius: 20px;
-		border-radius: 12px;
-	}
-
-	.main__img {
-		width: 50%;
-		border: 10px;
-	}
-
-	.result__advice {
-		margin: 0 auto;
-		width: 65%;
-		padding: 1rem;
-	}
-
-	.result__advice div {
-		width: 70%;
-	}
-
-	.button__box {
-		width: 25%;
-	}
-}
