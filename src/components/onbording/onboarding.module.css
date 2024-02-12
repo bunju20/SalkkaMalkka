@@ -1,0 +1,57 @@
+.main__img {
+	padding: 117px 0 0 0;
+	margin: 1rem 0 1rem 0;
+	width: 176px;
+	height: 176px;
+	border-radius: 20px;
+	
+}
+
+.header {
+	text-align: center;
+	font-family: 'AppleSDGothicNeo';
+	font-weight: bold;
+	font-size: 14px;
+	color: #3E3E3E;
+}
+
+.result__city {
+	/* 맥북프로 */
+	margin: 1rem;
+	text-align: center;
+	font-family: 'Jalnan2TTF';
+	font-size: 24px;
+	color: #3E3E3E;
+	
+}
+
+.wrap__all{
+	background-color: #F2F2F2;
+}
+
+.container {
+	height: 844px; /* 뷰포트 높이의 100%를 최소 높이로 설정 */
+	 background-color: #FFFFFF;
+	 max-width: 390px;
+	 margin: 0 auto;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+ }
+
+ .custom-dropdown .Dropdown-control {
+	border-color: blue; /* 테두리 색상 변경 */
+	width: 200px; /* 너비 설정 */
+	box-sizing: border-box; /* 너비 계산 방식을 border-box로 설정 */
+  }
+  
+
+  .genter__button{
+	width: 100%;
+	color: #CE9CFF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+
+  }
