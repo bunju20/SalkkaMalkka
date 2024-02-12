@@ -25,7 +25,34 @@ const Profile = ({ match }) => {
             case "MacBook Pro":
                 mainColor = palaette.MacBookPro;
                 colorLight = palaette.MacBookPro_ligth;
-                console.log();
+                break;
+            case "AirPods":
+                mainColor = palaette.AirPods;
+                colorLight = palaette.AirPods_light;
+                break;
+            case "iPhone":
+                mainColor = palaette.iPhone;
+                colorLight = palaette.iPhone_light;
+                break;
+            case "iPad":
+                mainColor = palaette.iPad;
+                colorLight = palaette.iPad_light;
+                break;
+            case "iMac":
+                mainColor = palaette.iMac;
+                colorLight = palaette.iMac_light;
+                break;
+            case "MacBook Air":
+                mainColor = palaette.MacBookAir;
+                colorLight = palaette.MacBookAir_light;
+                break;
+            case "Apple Watch":
+                mainColor = palaette.AppleWatch;
+                colorLight = palaette.AppleWatch_light;
+                break;
+            case "Mac mini":
+                mainColor = palaette.MacMini;
+                colorLight = palaette.MacMini_ligth;
                 break;
         }
     }
