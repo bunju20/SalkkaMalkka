@@ -53,36 +53,78 @@ strong {
 	font-weight: 700;
 	margin-bottom: 0.6rem;
 }
+
+/* Tag.module.css */
+.tag {
+	width: 30%;
+	height: 36px;
+	border-radius: 400px; /* 높은 값을 주어 완전한 둥근 모서리를 만듭니다 */
+	background-color: #007BFF; /* 태그의 배경색 */
+	color: white; /* 글씨 색상 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+.tagsContainer {
+	display: flex; /* Flexbox 레이아웃을 적용 */
+	gap: 10px; /* 태그 사이의 간격을 설정 (선택적) */
+	/* 속안의 아이템을 가운데로 정렬함 */
+	justify-content: center;
+}
+.result__list__box{
+	padding: 20px 18px;
+	background-color: #F2F2F2;
+	border-radius: 12px;
+	margin: 14px 0;
+}
+
 .result__style__wrapper {
 	list-style: disc;
-	list-style-position: inside;
 }
 .result__style__detail {
 	padding: 0.5rem;
+	list-style-position: inside;
+    text-indent: -1.3em; /* 불릿이 위치한 첫 줄을 왼쪽으로 당겨서 불릿과 텍스트 사이의 간격 조정 */
+    margin-left: 1em; 
+	
 }
 
 .result__advice__box {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	justify-content: center;
 	margin-top: 4rem;
+	padding: 0 24px;
+
+
+	
 }
 .result__advice {
 	display: flex;
 	margin: 1.2rem 0 1.2rem 0;
+	flex-direction: column;
+	align-items: center;
 }
 
 .result__advice img {
 	margin-right: 12px;
-	width: 100px;
-	height: 100px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
 }
 
 .result__advice h4 {
+	text-align: center;
 	font-weight: bold;
 	color: #4e4e4e;
 }
 .result__advice p {
 	margin: 1rem 0 1rem 0;
 	font-size: 14px;
+	text-align: center;
 }
 
 .button__box {

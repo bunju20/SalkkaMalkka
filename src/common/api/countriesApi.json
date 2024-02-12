@@ -1,45 +1,83 @@
 {
 	"INTJ": {
-		"id": "INTJ",
-		"subhead": "아는 만큼 보인다! 여행모범생인 당신",
-		"subject": "전 세계가 원하던 도시 이스탄불, 터키",
-
-		"nickname": "과학자형",
-		"img": "https://cdn.pixabay.com/photo/2019/03/08/19/52/galata-4043037_960_720.jpg",
+		"id": "IN",
+		"subhead": "MacBook Pro",
+		"subject": "고독을 즐기는 전략적 분석가",
+		"nickname":"내향적 직관 유형",
+		"img": "/img/result/macBookPro.svg",
+		"mbtitag":"INTJ/INFJ",
+		"hashtag": "#분석적 #전략적 #비전 #독창성",
 		"description": [
 			{
-				"des": "계획적이고 분석력이 대개 분석력이 높은 편이에요"
+				"des": "복잡한 아이디어와 비전을 추구하며 깊이 있는 연구와 분석을 선호합니다."
 			},
 			{
-				"des": "1분 1초까지 철저하게 계획하는 것을 좋아해요"
+				"des": "강력한 처리 능력으로 복잡한 프로젝트와 창의적인 작업을 수행을 즐깁니다."
 			},
 			{
-				"des": "개인주의적인 성향이 강해 타인에게 감정을 잘 드러내지 않는 편이에요"
+				"des": "고해상도 디스플레이처럼 선명하고 창조적인 분석 작업에 전문성을 지닙니다."
 			},
 			{
-				"des": "마음을 연 상대에게도 무뚝뚝한 듯 보이지만 쑥스러워 티 내지 않아요"
+				"des": "깊이 있는 사고와 전략적 계획을 통해 목표를 달성하려 합니다."
 			},
 			{
-				"des": "실용주의적이라 여행지에서 쓸데없는 소비는 하지 않는 편이에요"
-			},
-			{
-				"des": "여행 중에도 종종 혼자만의 시간이 필요한 타입이에요"
+				"des": "혼자서 집중하여 일할 때 가장 효율적이며, 의미 있는 변화를 추구합니다."
 			}
 		],
 		"duo": [
 			{
-				"img": "https://i.pinimg.com/564x/d5/fe/5c/d5fe5cd2078347a27be35c88cf242ec2.jpg",
-				"subhead": "ENTP",
-				"des": "열정의 도시 마드리드, 스페인"
+				"img": "/img/result/circle_macBookAir.svg",
+				"subhead": "MacBook Air",
+				"des": "혁신적인 아이디어와 창의적인 작업을 추구하는 타입"
 			}
 		],
 		"counter": [
 			{
-				"img": "https://i.pinimg.com/564x/93/26/c5/9326c5020322d5e9113501391fda04ee.jpg",
-				"subhead": "ESFP",
-				"des": " 호수의 도시 루가노, 스위스"
+				"img": "/img/result/circle_AppleWatch.svg",
+				"subhead": "Apple Watch",
+				"des": "창의적인 아이디어와 전략적인 계획을 추구하는 타입"
 			}
 		]
+
+	},
+	"IN" :{
+		"id": "IN",
+		"subhead": "MacBook Pro",
+		"subject": "고독을 즐기는 전략적 분석가",
+		"nickname":"내향적 직관 유형",
+		"img": "public/img/result/macBookPro.svg",
+		"description": [
+			{
+				"des": "복잡한 아이디어와 비전을 추구하며 깊이 있는 연구와 분석을 선호합니다."
+			},
+			{
+				"des": "강력한 처리 능력으로 복잡한 프로젝트와 창의적인 작업을 수행을 즐깁니다."
+			},
+			{
+				"des": "고해상도 디스플레이처럼 선명하고 창조적인 분석 작업에 전문성을 지닙니다."
+			},
+			{
+				"des": "깊이 있는 사고와 전략적 계획을 통해 목표를 달성하려 합니다."
+			},
+			{
+				"des": "혼자서 집중하여 일할 때 가장 효율적이며, 의미 있는 변화를 추구합니다."
+			}
+		],
+		"duo": [
+			{
+				"img": "public/img/result/macBookAir.svg",
+				"subhead": "MacBook Air",
+				"des": "혁신적인 아이디어와 창의적인 작업을 추구하는 타입"
+			}
+		],
+		"counter": [
+			{
+				"img": "public/img/result/AppleWatch.svg",
+				"subhead": "Apple Watch",
+				"des": "창의적인 아이디어와 전략적인 계획을 추구하는 타입"
+			}
+		]
+
 	},
 	"INTP": {
 		"id": "INTP",
