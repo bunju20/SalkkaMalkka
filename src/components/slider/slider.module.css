@@ -5,12 +5,55 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
  }
  
  .wrap__all{
      background-color: #F2F2F2;
  }
 
- .slider__slider{
+ .img__card{
+    height: 331px;
 
  }
+
+ .result__city {
+	/* 맥북프로 */
+	margin: 1rem;
+	text-align: center;
+	font-family: 'Jalnan2TTF';
+	font-size: 24px;
+	color: #3E3E3E;
+    margin-top: 60px;
+    margin-bottom: 60px;
+	
+}
+
+.start__button {
+	margin-bottom: 1rem;
+	width: 354px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+	background-color: #3E3E3E;
+	color: #fff;
+    margin: 90px 18px;
+}
+
+.button__wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.second{
+    color: white;
+	font-family: 'appleSDGothicNeo';
+	font-size: bold;
+	font-size: 18px;
+	text-align: center;
+
+}
