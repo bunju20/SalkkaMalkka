@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import styles from "./shareIcon.module.css";
+
 const KakaoShareButton = () => {
+    const API_KEY = process.env.REACT_APP_API_KEY;
     useEffect(() => {
         KakaoShareButton();
     }, []);
@@ -11,7 +13,7 @@ const KakaoShareButton = () => {
             // 중복 initialization 방지
             if (!kakao.isInitialized()) {
                 // 두번째 step 에서 가져온 javascript key 를 이용하여 initialize
-                kakao.init("examplePass");
+                kakao.init(API_KEY);
             }
             kakao.Link.createDefaultButton({
                 // Render 부분 id=kakao-link-btn 을 찾아 그부분에 렌더링을 합니다
