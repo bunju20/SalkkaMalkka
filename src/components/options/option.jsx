@@ -2,6 +2,7 @@ import React, { createRef, useEffect, useState } from "react";
 import styles from "./option.module.css";
 import { useHistory } from "react-router-dom";
 import Questions from "../../common/api/questionsApi";
+import ProgressBar from "./progress";
 
 const Options = () => {
     const [loading, setLoading] = useState(false);
@@ -76,56 +77,48 @@ const Options = () => {
     }, [currentSlide, finalMbti, history, loading]);
 
     return (
-        <>
-            <section className={styles.container}>
-                {!loading && (
-                    <div className={styles.slider} ref={slideRef}>
-                        {Questions.map((item, index) => (
-                            <div className={styles.content} key={item.id}>
-                                {/* Question and Answer Rendering */}
-                                <div className={styles.top}>
-                                    <div className={styles.mbti__counter}>
-                                        <span
-                                            className={
-                                                styles.mbti__progress__color
-                                            }
-                                        >
-                                            {currentSlide}
-                                        </span>
-                                        <span
-                                            className={styles.mbti__end__color}
-                                        >
-                                            /{TOTAL_SLIDES}
-                                        </span>
-                                    </div>
-                                    <h1 className={styles.mbti__question}>
-                                        {item.question}
-                                    </h1>
+        <section className={styles.container}>
+            {!loading && (
+                <div className={styles.slider} ref={slideRef}>
+                    {Questions.map((item, index) => (
+                        <div className={styles.content} key={item.id}>
+                            {/* Question and Answer Rendering */}
+                            <div className={styles.top}>
+                                <div className={styles.mbti__counter}>
+                                    <span
+                                        className={styles.mbti__progress__color}
+                                    >
+                                        {currentSlide}
+                                    </span>
+                                    <span className={styles.mbti__end__color}>
+                                        /{TOTAL_SLIDES}
+                                    </span>
                                 </div>
-                                <article className={styles.mbti__btn__box}>
-                                    {item.answers.map((answer, answerIndex) => (
-                                        <button
-                                            key={answer.type}
-                                            className={styles.mbti__button}
-                                            onClick={() =>
-                                                nextSlide(answerIndex)
-                                            }
-                                        >
-                                            {answer.content}
-                                        </button>
-                                    ))}
-                                </article>
+                                <h1 className={styles.mbti__question}>
+                                    {item.question}
+                                </h1>
                             </div>
-                        ))}
-                    </div>
-                )}
-                {loading && (
-                    <div className={styles.loading__container}>
-                        {/* Loading Animation */}
-                    </div>
-                )}
-            </section>
-        </>
+                            <article className={styles.mbti__btn__box}>
+                                {item.answers.map((answer, answerIndex) => (
+                                    <button
+                                        key={answer.type}
+                                        className={styles.mbti__button}
+                                        onClick={() => nextSlide(answerIndex)}
+                                    >
+                                        {answer.content}
+                                    </button>
+                                ))}
+                            </article>
+                        </div>
+                    ))}
+                </div>
+            )}
+            {loading && (
+                <div className={styles.loading__container}>
+                    {/* Loading Animation */}
+                </div>
+            )}
+        </section>
     );
 };
 

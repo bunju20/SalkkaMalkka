@@ -21,6 +21,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.1",
+    "react-sweet-progress": "^1.1.2",
     "semver": "^7.6.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
