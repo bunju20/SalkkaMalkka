@@ -1,0 +1,16 @@
+.container {
+    height: 844px; /* 뷰포트 높이의 100%를 최소 높이로 설정 */
+    background-color: #FFFFFF;
+    max-width: 390px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .wrap__all{
+     background-color: #F2F2F2;
+ }
+
+ .slider__slider{
+
+ }
