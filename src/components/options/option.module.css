@@ -29,7 +29,7 @@ button {
 }
 
 .mbti__progress__color {
-    color: #ed6174;
+    color: #CE9CFF;
     font-size: 1.5em;
 }
 
@@ -69,7 +69,7 @@ button {
 
 .mbti__button:active {
     color: #fff;
-    background-color: #ed6174;
+    background-color: #CE9CFF;
     transform: scale(0.95);
     transition: 100ms;
     border: none;
@@ -91,7 +91,7 @@ button {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    border: 1px solid #ed6174;
+    border: 1px solid #CE9CFF;
     border-top: 1px solid white;
     animation: spin 2s linear infinite;
 }
@@ -134,7 +134,7 @@ button {
 
     .mbti__button:hover {
         color: #fff;
-        background-color: #ed6174;
+        background-color: #CE9CFF;
         transform: scale(0.98);
         transition: 100ms;
     }
@@ -159,3 +159,19 @@ button {
         font-size: 1.2rem;
     }
 }
+
+.progress__bar{
+    /* make center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* make center*/
+
+}
+
+
+
+ 
+ .wrap__all{
+     background-color: #F2F2F2;
+ }
