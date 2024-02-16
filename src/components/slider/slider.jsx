@@ -12,7 +12,7 @@ const SliderScreen = () => {
     const handleButtonClick = () => {
         // 새 탭에서 쿠팡 링크 열기
         window.open(
-            "https://link.coupang.com/a/bqpTvB",
+            "https://link.coupang.com/a/bpRGvM",
             "_blank",
             "noopener,noreferrer"
         );
