@@ -5,10 +5,14 @@ import GlobalStyle from "./common/css/globalStyle";
 import Options from "./components/options/option";
 import OnBoarding from "./components/onbording/onboarding";
 import SliderScreen from "./components/slider/slider";
+import ReactGA from "react-ga4";
+import RouteChangeTracker from "./components/RouteChangeTracker";
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <>
+            <RouteChangeTracker />
+
             <GlobalStyle />
             <Switch>
                 <Route exact path="/">
@@ -25,7 +29,7 @@ const App = () => {
                 </Route>
                 <Route path="/result/:countryName" component={Countries} />
             </Switch>
-        </BrowserRouter>
+        </>
     );
 };
 
