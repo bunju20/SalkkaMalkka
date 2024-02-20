@@ -4,6 +4,8 @@ import './index.css'
 import App from './app'
 import '@fortawesome/fontawesome-free/js/all.js'
 import { BrowserRouter } from 'react-router-dom';
+import RouteChangeTracker from "./components/RouteChangeTracker";
+
 
 /* index.js */
 import ReactGA from "react-ga4";

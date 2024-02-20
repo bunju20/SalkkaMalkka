@@ -7,12 +7,12 @@ import OnBoarding from "./components/onbording/onboarding";
 import SliderScreen from "./components/slider/slider";
 import ReactGA from "react-ga4";
 import RouteChangeTracker from "./components/RouteChangeTracker";
+import { Routes } from "react-router-dom";
 
 const App = () => {
+    RouteChangeTracker();
     return (
         <>
-            <RouteChangeTracker />
-
             <GlobalStyle />
             <Switch>
                 <Route exact path="/">
