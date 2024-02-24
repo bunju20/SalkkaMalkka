@@ -350,24 +350,6 @@ template {
 }
 
 @font-face {
-	font-family: 'AppleSDGothicNeo';
-	font-weight: bold;
-	src: url('./fonts/AppleSDGothicNeoB.ttf');
-}
-
-@font-face {
-	font-family: 'AppleSDGothicNeo';
-	font-weight: extraBold;
-	src: url('./fonts/AppleSDGothicNeoEB.ttf');
-}
-
-@font-face {
-	font-family: 'AppleSDGothicNeo';
-	font-weight: medium;
-	src: url('./fonts/AppleSDGothicNeoM.ttf');
-}
-
-@font-face {
 	font-family: 'Jalnan2TTF';
 	src: url('./fonts/Jalnan2TTF.ttf');
 }
