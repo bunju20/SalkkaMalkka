@@ -36,7 +36,7 @@ const Options = () => {
                 if (currentSlide === TOTAL_SLIDES) {
                     setLoading(true);
                     setTimeout(() => {
-                        history.push(`/slider`, {
+                        history.push(`/result/${finalMbti}`, {
                             finalMbti: finalMbti,
                         });
                     }, 3000);
@@ -73,7 +73,7 @@ const Options = () => {
         if (!loading && currentSlide > TOTAL_SLIDES) {
             setLoading(true);
             setTimeout(() => {
-                history.push(`/slider`, { finalMbti: finalMbti });
+                history.push(`/result/${finalMbti}`, { finalMbti: finalMbti });
             }, 3000);
         }
     }, [currentSlide, finalMbti, history, loading]);

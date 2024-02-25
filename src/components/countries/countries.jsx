@@ -1,64 +1,85 @@
+import React, { useState, useEffect } from "react";
 import styles from "./countries.module.css";
-import { Link } from "react-router-dom";
 import Countries from "../../common/api/countriesApi/../countriesApi";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSignOutAlt, faCopy } from "@fortawesome/free-solid-svg-icons";
-import { faEarlybirds } from "@fortawesome/free-brands-svg-icons";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import palaette from "../../lib/styles/colorPalatte.js";
 import KakaoBtn from "../shareSNS/kakaoShareButton";
 import FacebookBtn from "../shareSNS/facebookShareButton";
 import TwitterBtn from "../shareSNS/twitterShareButton";
-import palaette from "../../lib/styles/colorPalatte.js";
+import { useLocation, useHistory } from "react-router-dom";
 
 const Profile = ({ match }) => {
-    const url = window.location.href;
+    const location = useLocation();
+    const history = useHistory();
+    const finalMbti = location.state.finalMbti;
+
+    const [isLocked, setIsLocked] = useState(true); // 스크롤 제어 및 그라데이션 효과 제어를 위한 상태
     const { countryName } = match.params;
     const nation = Countries[countryName];
-    let mainColor;
-    let colorLight;
+    let mainColor, colorLight;
+
+    const handleButtonClick = () => {
+        let curUrl = Countries[finalMbti].url;
+
+        // 새 탭에서 쿠팡 링크 열기
+        window.open(curUrl, "_blank", "noopener,noreferrer");
+        handleUnlock(); // 버튼 클릭 시 스크롤 가능하게 변경
+    };
+
+    useEffect(() => {
+        if (isLocked) {
+            // 스크롤 방지
+            document.body.style.overflow = "hidden";
+        } else {
+            // 스크롤 가능
+            document.body.style.overflow = "auto";
+        }
+    }, [isLocked]);
+
+    const handleUnlock = () => {
+        setIsLocked(false); // 상태 업데이트로 스크롤 가능하게 변경 및 그라데이션 제거
+    };
 
     if (!nation) {
         return <div>존재하지 않는 결과입니다.</div>;
-    } else {
-        // eslint-disable-next-line default-case
-        switch (nation.subhead) {
-            case "MacBook Pro":
-                mainColor = palaette.MacBookPro;
-                colorLight = palaette.MacBookPro_ligth;
-                break;
-            case "AirPods":
-                mainColor = palaette.AirPods;
-                colorLight = palaette.AirPods_light;
-                break;
-            case "iPhone":
-                mainColor = palaette.iPhone;
-                colorLight = palaette.iPhone_light;
-                break;
-            case "iPad":
-                mainColor = palaette.iPad;
-                colorLight = palaette.iPad_light;
-                break;
-            case "iMac":
-                mainColor = palaette.iMac;
-                colorLight = palaette.iMac_light;
-                break;
-            case "MacBook Air":
-                mainColor = palaette.MacBookAir;
-                colorLight = palaette.MacBookAir_light;
-                break;
-            case "Apple Watch":
-                mainColor = palaette.AppleWatch;
-                colorLight = palaette.AppleWatch_light;
-                break;
-            case "Mac mini":
-                mainColor = palaette.MacMini;
-                colorLight = palaette.MacMini_ligth;
-                break;
-        }
     }
-    const copyAlert = () => {
-        alert("링크 복사완료!");
-    };
+
+    // 스타일 및 색상 설정은 기존 로직 사용
+    // eslint-disable-next-line default-case
+    switch (nation.subhead) {
+        case "MacBook Pro":
+            mainColor = palaette.MacBookPro;
+            colorLight = palaette.MacBookPro_ligth;
+            break;
+        case "AirPods":
+            mainColor = palaette.AirPods;
+            colorLight = palaette.AirPods_light;
+            break;
+        case "iPhone":
+            mainColor = palaette.iPhone;
+            colorLight = palaette.iPhone_light;
+            break;
+        case "iPad":
+            mainColor = palaette.iPad;
+            colorLight = palaette.iPad_light;
+            break;
+        case "iMac":
+            mainColor = palaette.iMac;
+            colorLight = palaette.iMac_light;
+            break;
+        case "MacBook Air":
+            mainColor = palaette.MacBookAir;
+            colorLight = palaette.MacBookAir_light;
+            break;
+        case "Apple Watch":
+            mainColor = palaette.AppleWatch;
+            colorLight = palaette.AppleWatch_light;
+            break;
+        case "Mac mini":
+            mainColor = palaette.MacMini;
+            colorLight = palaette.MacMini_ligth;
+            break;
+    }
+
     return (
         <div className={styles.wrap__all}>
             <div className={styles.wrapper} key={nation.id}>
@@ -106,7 +127,11 @@ const Profile = ({ match }) => {
                         </div>
                     </div>
 
-                    <div className={styles.result__list__box}>
+                    <div
+                        className={`${styles.result__list__box} ${
+                            isLocked ? styles.locked : ""
+                        }`}
+                    >
                         <ul className={styles.result__style__wrapper}>
                             {nation.description.map((item) => {
                                 return (
@@ -119,7 +144,20 @@ const Profile = ({ match }) => {
                                 );
                             })}
                         </ul>
+                        {isLocked && (
+                            <button
+                                className={styles.start__button}
+                                onClick={handleButtonClick}
+                            >
+                                <div className={styles.button__wrap}>
+                                    <p className={styles.second}>
+                                        쿠팡 방문하고 환생결과 확인하기
+                                    </p>
+                                </div>
+                            </button>
+                        )}
                     </div>
+
                     <div className={styles.result__advice__box}>
                         <div className={styles.result__advice}>
                             <h4 style={{ color: mainColor }}>환상의 조합</h4>

@@ -91,6 +91,7 @@ strong {
 	justify-content: center;
 }
 .result__list__box{
+	position: relative;
 	width: "100%";
 	max-width: 500px;
 	background-color: #F2F2F2;
@@ -215,3 +216,47 @@ strong {
 	justify-content: center;
 }
 
+.locked::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10%; /* 상단 50%는 투명 */
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1),rgba(255, 255, 255, 1)); /* 그라데이션 효과 */
+    pointer-events: none; /* 클릭 이벤트 무시 */
+}
+.start__button {
+	margin-bottom: 1rem;
+	width: 354px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+	background-color: #3E3E3E;
+	color: #fff;
+    margin: 90px 18px;
+	position: absolute;
+    top: 20%; /* 부모 컨테이너의 가운데에 위치 */
+    left: 50%; /* 부모 컨테이너의 가운데에 위치 */
+    transform: translate(-50%, -50%); /* 정확한 중앙 정렬을 위해 */
+    z-index: 2; /* 내용 위에 버튼이 오도록 */
+    /* 버튼 스타일링 추가 */
+}
+
+.button__wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.second{
+    color: white;
+	font-family: 'appleSDGothicNeo';
+	font-size: bold;
+	font-size: 18px;
+	text-align: center;
+
+}
