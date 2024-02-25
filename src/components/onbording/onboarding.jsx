@@ -11,6 +11,13 @@ export const OnBoarding = () => {
     const history = useHistory();
 
     const options = [
+        "1990년생",
+        "1991년생",
+        "1992년생",
+        "1993년생",
+        "1994년생",
+        "1995년생",
+        "1996년생",
         "1997년생",
         "1998년생",
         "1999년생",
@@ -21,8 +28,16 @@ export const OnBoarding = () => {
         "2004년생",
         "2005년생",
         "2006년생",
+        "2007년생",
+        "2008년생",
+        "2009년생",
+        "2010년생",
+        "2011년생",
+        "2012년생",
+        "2013년생",
+        "2014년생",
     ];
-    const defaultOption = options[6];
+    const defaultOption = options[0];
     return (
         <div className={styles.wrap__all}>
             <style>
