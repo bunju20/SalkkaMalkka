@@ -10,7 +10,7 @@ const FacebookShareButton = () => {
         <div>
             <a href="/#" onClick={shareFacebook}>
                 <img
-                    src="/img/result/circle_insta.svg"
+                    src="/img/result/circle_insta.jpg"
                     className={styles.facebook__icon}
                     alt="facebook_icon"
                 />

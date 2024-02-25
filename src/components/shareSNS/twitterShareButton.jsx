@@ -9,7 +9,7 @@ const TwitterShareButton = () => {
                 data-size="large"
             >
                 <img
-                    src="/img/result/circle_X.svg"
+                    src="/img/result/circle_X.jpg"
                     alt="twitter_icon"
                     className={styles.twitter__icon}
                 />

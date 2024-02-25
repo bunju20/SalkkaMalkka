@@ -1,27 +1,4 @@
 @font-face {
-	font-family: 'default';
-	src: url('./fonts/Jua-Regular.ttf');
-}
-
-@font-face {
-	font-family: 'AppleSDGothicNeo';
-	font-weight: bold;
-	src: url('./fonts/AppleSDGothicNeoB.ttf');
-}
-
-@font-face {
-	font-family: 'AppleSDGothicNeo';
-	font-weight: extraBold;
-	src: url('./fonts/AppleSDGothicNeoEB.ttf');
-}
-
-@font-face {
-	font-family: 'AppleSDGothicNeo';
-	font-weight: medium;
-	src: url('./fonts/AppleSDGothicNeoM.ttf');
-}
-
-@font-face {
 	font-family: 'Jalnan2TTF';
-	src: url('./fonts/Jalnan2TTF.ttf');
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
 }
