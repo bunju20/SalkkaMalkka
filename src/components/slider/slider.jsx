@@ -4,18 +4,17 @@ import SimpleSlider from "./simpleSlider";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import Countries from "../../common/api/countriesApi.json";
 
 const SliderScreen = () => {
     const history = useHistory();
     const location = useLocation();
     const finalMbti = location.state.finalMbti;
     const handleButtonClick = () => {
+        let curUrl = Countries[finalMbti].url;
+
         // 새 탭에서 쿠팡 링크 열기
-        window.open(
-            "https://link.coupang.com/a/bpRGvM",
-            "_blank",
-            "noopener,noreferrer"
-        );
+        window.open(curUrl, "_blank", "noopener,noreferrer");
         // 동시에 앱 내부에서 /result/경로로 이동
         history.push(`/result/${finalMbti}`);
     };
