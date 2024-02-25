@@ -45,7 +45,7 @@ const KakaoShareButton = () => {
             {/* Kakao share button */}
             <a href="/#" id="kakao-link-btn">
                 <img
-                    src="/img/result/circle_kakao.svg"
+                    src="/img/result/circle_kakao.jpg"
                     alt="kakao-share-icon"
                     className={styles.kakao__icon}
                 />

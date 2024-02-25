@@ -3,7 +3,7 @@
         "id": "INTJ",
         "subhead": "MacBook Pro",
         "subject": "고독을 즐기는 전략적 분석가",
-        "img": "/img/result/macBookPro.svg",
+        "img": "/img/result/macBookPro.jpg",
         "mbtitag": "INTJ/INFJ",
         "hashtag": "#분석적 #전략적 #비전 #독창성",
         "description": [
@@ -25,13 +25,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_macBookAir.svg",
+                "img": "/img/result/circle_macBookAir.jpg",
                 "subhead": "MacBook Air"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_AppleWatch.svg",
+                "img": "/img/result/circle_AppleWatch.jpg",
                 "subhead": "Apple Watch"
             }
         ]
@@ -40,7 +40,7 @@
         "id": "INFJ",
         "subhead": "MacBook Pro",
         "subject": "고독을 즐기는 전략적 분석가",
-        "img": "/img/result/macBookPro.svg",
+        "img": "/img/result/macBookPro.jpg",
         "mbtitag": "INTJ/INFJ",
         "hashtag": "#분석적 #전략적 #비전 #독창성",
         "description": [
@@ -62,13 +62,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_macBookAir.svg",
+                "img": "/img/result/circle_macBookAir.jpg",
                 "subhead": "MacBook Air"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_AppleWatch.svg",
+                "img": "/img/result/circle_AppleWatch.jpg",
                 "subhead": "Apple Watch"
             }
         ]
@@ -77,7 +77,7 @@
         "id": "ISTJ",
         "subhead": "iPhone",
         "subject": "체계적 질서를 유지하는 협력자",
-        "img": "/img/result/iPhone.svg",
+        "img": "/img/result/iPhone.jpg",
         "mbtitag": "ISTJ/ISFJ",
         "hashtag": "#신뢰성 #조직적 #세부지향적 #섬세함",
         "description": [
@@ -99,13 +99,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/AirPod.svg",
+                "img": "/img/result/AirPod.jpg",
                 "subhead": "AirPod"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/iPad.svg",
+                "img": "/img/result/iPad.jpg",
                 "subhead": "iPad"
             }
         ]
@@ -114,7 +114,7 @@
         "id": "ISFJ",
         "subhead": "iPhone",
         "subject": "체계적 질서를 유지하는 협력자",
-        "img": "/img/result/iPhone.svg",
+        "img": "/img/result/iPhone.jpg",
         "mbtitag": "ISTJ/ISFJ",
         "hashtag": "#신뢰성 #조직적 #세부지향적 #섬세함",
         "description": [
@@ -136,13 +136,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/AirPod.svg",
+                "img": "/img/result/AirPod.jpg",
                 "subhead": "AirPod"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/iPad.svg",
+                "img": "/img/result/iPad.jpg",
                 "subhead": "iPad"
             }
         ]
@@ -151,7 +151,7 @@
         "id": "ESTJ",
         "subhead": "Apple Watch",
         "subject": "언제나 활기찬 명랑 리더",
-        "img": "/img/result/AppleWatch.svg",
+        "img": "/img/result/AppleWatch.jpg",
         "mbtitag": "ESTJ/ESFJ",
         "hashtag": "#사회적 #실용적 #조화 #리더십",
         "description": [
@@ -173,13 +173,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_iPhone.svg",
+                "img": "/img/result/circle_iPhone.jpg",
                 "subhead": "iPhone"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_macBookPro.svg",
+                "img": "/img/result/circle_macBookPro.jpg",
                 "subhead": "MacBook Pro"
             }
         ]
@@ -189,7 +189,7 @@
         "id": "ESFJ",
         "subhead": "Apple Watch",
         "subject": "언제나 활기찬 명랑 리더",
-        "img": "/img/result/appleWatch.svg",
+        "img": "/img/result/appleWatch.jpg",
         "mbtitag": "ESTJ/ESFJ",
         "hashtag": "#사회적 #실용적 #조화 #리더십",
         "description": [
@@ -211,13 +211,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_iPhone.svg",
+                "img": "/img/result/circle_iPhone.jpg",
                 "subhead": "iPhone"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_macBookPro.svg",
+                "img": "/img/result/circle_macBookPro.jpg",
                 "subhead": "MacBook Pro"
             }
         ]
@@ -226,7 +226,7 @@
         "id": "ENTP",
         "subhead": "iPad",
         "subject": "새로운 가능성을 탐색하는 모험가",
-        "img": "/img/result/iPad.svg",
+        "img": "/img/result/iPad.jpg",
         "mbtitag": "ENTP/ENFP",
         "hashtag": "#혁신적 #탐험적 #다양성 #열정적",
         "description": [
@@ -248,13 +248,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_macMini.svg",
+                "img": "/img/result/circle_macMini.jpg",
                 "subhead": "Mac mini"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_iPhone.svg",
+                "img": "/img/result/circle_iPhone.jpg",
                 "subhead": "iPhone"
             }
         ]
@@ -264,7 +264,7 @@
         "id": "ENFP",
         "subhead": "iPad",
         "subject": "새로운 가능성을 탐색하는 모험가",
-        "img": "/img/result/iPad.svg",
+        "img": "/img/result/iPad.jpg",
         "mbtitag": "ENTP/ENFP",
         "hashtag": "#혁신적 #탐험적 #다양성 #열정적",
         "description": [
@@ -286,13 +286,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_macMini.svg",
+                "img": "/img/result/circle_macMini.jpg",
                 "subhead": "Mac mini"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_iPhone.svg",
+                "img": "/img/result/circle_iPhone.jpg",
                 "subhead": "iPhone"
             }
         ]
@@ -301,7 +301,7 @@
         "id": "ISTP",
         "subhead": "Mac mini",
         "subject": "분석적 연구를 즐기는 탐구자",
-        "img": "/img/result/macMini.svg",
+        "img": "/img/result/macMini.jpg",
         "mbtitag": "ISTP/INTP",
         "hashtag": "#논리적 #독립적 #호기심 #분석적",
         "description": [
@@ -323,13 +323,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_iPad.svg",
+                "img": "/img/result/circle_iPad.jpg",
                 "subhead": "iPad"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_airPods.svg",
+                "img": "/img/result/circle_airPods.jpg",
                 "subhead": "AirPods"
             }
         ]
@@ -339,7 +339,7 @@
         "id": "INTP",
         "subhead": "Mac mini",
         "subject": "분석적 연구를 즐기는 탐구자",
-        "img": "/img/result/macMini.svg",
+        "img": "/img/result/macMini.jpg",
         "mbtitag": "ISTP/INTP",
         "hashtag": "#논리적 #독립적 #호기심 #분석적",
         "description": [
@@ -361,13 +361,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_iPad.svg",
+                "img": "/img/result/circle_iPad.jpg",
                 "subhead": "iPad"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_AirPod.svg",
+                "img": "/img/result/circle_AirPod.jpg",
                 "subhead": "AirPods"
             }
         ]
@@ -376,7 +376,7 @@
         "id": "ISFP",
         "subhead": "MacBook Air",
         "subject": "감성에서 시작되는 아이디어 뱅크",
-        "img": "/img/result/macBookAir.svg",
+        "img": "/img/result/macBookAir.jpg",
         "mbtitag": "ISFP/INFP",
         "hashtag": "#감성적 #창의적 #내면적 #가치지향적",
         "description": [
@@ -395,13 +395,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_macBookPro.svg",
+                "img": "/img/result/circle_macBookPro.jpg",
                 "subhead": "MacBook Pro"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_iMac.svg",
+                "img": "/img/result/circle_iMac.jpg",
                 "subhead": "iMac"
             }
         ]
@@ -411,7 +411,7 @@
         "id": "INFP",
         "subhead": "MacBook Air",
         "subject": "감성에서 시작되는 아이디어 뱅크",
-        "img": "/img/result/macBookAir.svg",
+        "img": "/img/result/macBookAir.jpg",
         "mbtitag": "ISFP/INFP",
         "hashtag": "#감성적 #창의적 #내면적 #가치지향적",
         "description": [
@@ -430,13 +430,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_macBookPro.svg",
+                "img": "/img/result/circle_macBookPro.jpg",
                 "subhead": "MacBook Pro"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_iMac.svg",
+                "img": "/img/result/circle_iMac.jpg",
                 "subhead": "iMac"
             }
         ]
@@ -446,7 +446,7 @@
         "id": "ESTP",
         "subhead": "iMac",
         "subject": "목표를 향해 돌진하는 전략적 불도저",
-        "img": "/img/result/iMac.svg",
+        "img": "/img/result/iMac.jpg",
         "mbtitag": "ESTP/ENTJ",
         "hashtag": "#결단력 #효율성 #경쟁적 #목표지향적",
         "description": [
@@ -468,13 +468,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_AirPod.svg",
+                "img": "/img/result/circle_AirPod.jpg",
                 "subhead": "AirPods"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_macBookAir.svg",
+                "img": "/img/result/circle_macBookAir.jpg",
                 "subhead": "MacBook Air"
             }
         ]
@@ -483,7 +483,7 @@
         "id": "ENTJ",
         "subhead": "iMac",
         "subject": "목표를 향해 돌진하는 전략적 불도저",
-        "img": "/img/result/iMac.svg",
+        "img": "/img/result/iMac.jpg",
         "mbtitag": "ESTP/ENTJ",
         "hashtag": "#결단력 #효율성 #경쟁적 #목표지향적",
         "description": [
@@ -505,13 +505,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_AirPod.svg",
+                "img": "/img/result/circle_AirPod.jpg",
                 "subhead": "AirPods"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_macBookAir.svg",
+                "img": "/img/result/circle_macBookAir.jpg",
                 "subhead": "MacBook Air"
             }
         ]
@@ -521,7 +521,7 @@
         "id": "ESFP",
         "subhead": "AirPods",
         "subject": "조화를 중시하는 밸런스메이커",
-        "img": "/img/result/AirPod.svg",
+        "img": "/img/result/AirPod.jpg",
         "mbtitag": "ESFP/ENFJ",
         "hashtag": "#친화력 #영감 #사교적 #지지적",
         "description": [
@@ -543,13 +543,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_iPhone.svg",
+                "img": "/img/result/circle_iPhone.jpg",
                 "subhead": "iPhone"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_macMini.svg",
+                "img": "/img/result/circle_macMini.jpg",
                 "subhead": "Mac mini"
             }
         ]
@@ -559,7 +559,7 @@
         "id": "ENFJ",
         "subhead": "AirPods",
         "subject": "조화를 중시하는 밸런스메이커",
-        "img": "/img/result/AirPod.svg",
+        "img": "/img/result/AirPod.jpg",
         "mbtitag": "ESFP/ENFJ",
         "hashtag": "#친화력 #영감 #사교적 #지지적",
         "description": [
@@ -581,13 +581,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/circle_iPhone.svg",
+                "img": "/img/result/circle_iPhone.jpg",
                 "subhead": "iPhone"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/circle_macMini.svg",
+                "img": "/img/result/circle_macMini.jpg",
                 "subhead": "Mac mini"
             }
         ]

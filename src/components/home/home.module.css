@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../../../public/img/start/first_screen.svg');
+    background-image: url('../../../public/img/start/first_screen.png');
     background-size: contain;
     background-position: center;
 }
@@ -71,7 +71,7 @@
 }
 
 .header {
-	
+
 	font-family: 'AppleSDGothicNeo';
 	font-weight: bold;
 	font-size: 16px;
