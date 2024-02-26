@@ -102,13 +102,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/AirPod.jpg",
+                "img": "/img/result/circle_AirPod.jpg",
                 "subhead": "AirPod"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/iPad.jpg",
+                "img": "/img/result/circle_iPad.jpg",
                 "subhead": "iPad"
             }
         ]
@@ -140,13 +140,13 @@
         ],
         "duo": [
             {
-                "img": "/img/result/AirPod.jpg",
+                "img": "/img/result/circle_AirPod.jpg",
                 "subhead": "AirPod"
             }
         ],
         "counter": [
             {
-                "img": "/img/result/iPad.jpg",
+                "img": "/img/result/circle_iPad.jpg",
                 "subhead": "iPad"
             }
         ]
