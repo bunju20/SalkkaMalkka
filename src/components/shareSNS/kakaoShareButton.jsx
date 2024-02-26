@@ -20,20 +20,20 @@ const KakaoShareButton = () => {
                 container: "#kakao-link-btn",
                 objectType: "feed",
                 content: {
-                    title: "여행MBIT",
-                    description: "나에게 어울리는 여행지는?",
-                    imageUrl: "https://felizmbti.netlify.app/img/FelizLogo.png",
+                    title: "애플 환생 테스트",
+                    description: "내가 애플 제품으로 환생한다면?",
+                    imageUrl: "https://i.ibb.co/vcPbf6d/first-screen.png",
                     link: {
-                        mobileWebUrl: "https://felizmbti.netlify.app/",
-                        webUrl: "https://felizmbti.netlify.app/",
+                        mobileWebUrl: "https://salkka-malkka.vercel.app/",
+                        webUrl: "https://salkka-malkka.vercel.app/",
                     },
                 },
                 buttons: [
                     {
                         title: "테스트 하기",
                         link: {
-                            mobileWebUrl: "https://felizmbti.netlify.app/",
-                            webUrl: "https://felizmbti.netlify.app/",
+                            mobileWebUrl: "https://salkka-malkka.vercel.app/",
+                            webUrl: "https://salkka-malkka.vercel.app/",
                         },
                     },
                 ],
