@@ -227,23 +227,24 @@ strong {
     pointer-events: none; /* 클릭 이벤트 무시 */
 }
 .start__button {
-	margin-bottom: 1rem;
-	width: 354px;
-	height: 60px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 12px;
-	background-color: #3E3E3E;
-	color: #fff;
-    margin: 90px 18px;
-	position: absolute;
-    top: 20%; /* 부모 컨테이너의 가운데에 위치 */
-    left: 50%; /* 부모 컨테이너의 가운데에 위치 */
-    transform: translate(-50%, -50%); /* 정확한 중앙 정렬을 위해 */
+    margin-bottom: 1rem;
+    min-width: 300px; /* 최소 너비 */
+    max-width: 80vw; /* 창 너비의 최대 80% */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #3E3E3E;
+    color: #fff;
+    position: fixed; /* 화면에 고정 */
+    bottom: 50px; /* 하단에서 50px 떨어진 위치 */
+    left: 50%; /* 가로 중앙 정렬 */
+    transform: translateX(-50%); /* 좌우 중앙 정렬을 위해 */
     z-index: 2; /* 내용 위에 버튼이 오도록 */
     /* 버튼 스타일링 추가 */
 }
+
 
 .button__wrap{
 	display: flex;

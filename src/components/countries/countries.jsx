@@ -151,7 +151,7 @@ const Profile = ({ match }) => {
                             >
                                 <div className={styles.button__wrap}>
                                     <p className={styles.second}>
-                                        쿠팡 방문하고 환생결과 확인하기
+                                        쿠팡 방문하고 마저 읽기
                                     </p>
                                 </div>
                             </button>
