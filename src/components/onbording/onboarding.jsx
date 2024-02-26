@@ -48,7 +48,7 @@ export const OnBoarding = () => {
         "2013년생",
         "2014년생",
     ];
-    const defaultOption = options[0];
+    const defaultOption = options[20];
     return (
         <div className={styles.wrap__all}>
             <style>

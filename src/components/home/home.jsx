@@ -37,7 +37,7 @@ const Home = () => {
 
                     <Link to="/onboarding" className={styles.start__button}>
                         <div className={styles.button__wrap}>
-                            <p className={styles.first}>38,415,965 번 째로</p>
+                            <p className={styles.first}>3126 번 째로</p>
                             <p className={styles.second}>
                                 애플시티 모험 시작하기
                             </p>
