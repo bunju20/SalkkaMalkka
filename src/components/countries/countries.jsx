@@ -30,7 +30,7 @@ const Profile = ({ match }) => {
                 headers: {
                     "Content-Type": "application/json", // 내용 유형을 JSON으로 설정
                 },
-                mode: "cors",
+                mode: "no-cors",
                 body: JSON.stringify(data),
             });
 
