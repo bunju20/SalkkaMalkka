@@ -30,12 +30,9 @@ const Profile = ({ match }) => {
                 headers: {
                     "Content-Type": "application/json", // 내용 유형을 JSON으로 설정
                 },
+                mode: "cors",
                 body: JSON.stringify(data),
             });
-
-            if (!response.ok) {
-                throw new Error("Network response was not ok");
-            }
 
             const jsonResponse = await response.json(); // 응답 본문을 JSON으로 파싱
             console.log("Success:", jsonResponse); // 성공 응답 로그 출력
@@ -46,7 +43,6 @@ const Profile = ({ match }) => {
 
     const handleButtonClick = () => {
         let curUrl = Countries[finalMbti].url;
-        // 새 탭에서 쿠팡 링크 열기
         window.open(curUrl, "_blank", "noopener,noreferrer");
         handleUnlock(); // 버튼 클릭 시 스크롤 가능하게 변경
         dispatch(setFinalPage(`/result/final`));
