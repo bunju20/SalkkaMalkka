@@ -3,12 +3,14 @@ import styles from "./onboarding.module.css";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { useHistory } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setFinalPage, setAge, setGender } from "../../features/dataSlice";
 
 export const OnBoarding = () => {
-    const [age, setAge] = useState("");
     const [selected, setSelected] = React.useState([]);
-    const [gender, setGender] = useState("");
     const history = useHistory();
+    const dispatch = useDispatch();
+    dispatch(setFinalPage("/onboarding"));
 
     const options = [
         "1980년생",
@@ -49,6 +51,7 @@ export const OnBoarding = () => {
         "2014년생",
     ];
     const defaultOption = options[20];
+
     return (
         <div className={styles.wrap__all}>
             <style>
@@ -86,7 +89,7 @@ export const OnBoarding = () => {
                     <Dropdown
                         options={options}
                         onChange={(option) => {
-                            setAge(option.value);
+                            dispatch(setAge(option.value));
                         }}
                         value={defaultOption}
                         placeholder="Select an option"
@@ -103,7 +106,7 @@ export const OnBoarding = () => {
                         {/* 남자 버튼 */}
                         <button
                             onClick={() => {
-                                setGender("남성");
+                                dispatch(setGender("남성"));
                                 history.push("/tripMBTI"); // 버튼 클릭 시 /result/tripMBTI로 라우팅
                             }}
                             style={{
@@ -125,7 +128,7 @@ export const OnBoarding = () => {
                         {/* 여자 버튼 */}
                         <button
                             onClick={() => {
-                                setGender("여성");
+                                dispatch(setGender("여성"));
                                 history.push("/tripMBTI");
                             }}
                             style={{

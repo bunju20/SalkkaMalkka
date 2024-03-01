@@ -1,8 +1,15 @@
 import React from "react";
 import styles from "./shareIcon.module.css";
+import { useDispatch } from "react-redux";
+import { setShareButton } from "../../features/dataSlice";
+
 const TwitterShareButton = () => {
+    const dispatch = useDispatch();
+    function click() {
+        dispatch(setShareButton("twitter"));
+    }
     return (
-        <div>
+        <div onClick={click}>
             <a
                 className="twitter-share-button"
                 href="https://twitter.com/intent/tweet?text=https://felizmbti.netlify.app/"

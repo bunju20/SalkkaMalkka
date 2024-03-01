@@ -3,6 +3,8 @@ import styles from "./option.module.css";
 import { useHistory } from "react-router-dom";
 import Questions from "../../common/api/questionsApi";
 import ProgressBar from "./progress";
+import { useDispatch } from "react-redux";
+import { setFinalPage, setMbti } from "../../features/dataSlice";
 
 const Options = () => {
     const [loading, setLoading] = useState(false);
@@ -11,6 +13,8 @@ const Options = () => {
     const slideRef = createRef();
     const TOTAL_SLIDES = Questions.length;
     const history = useHistory();
+    const dispatch = useDispatch();
+
     const [mbtiCounts, setMbtiCounts] = useState({
         I: 0,
         E: 0,
@@ -36,6 +40,8 @@ const Options = () => {
                 if (currentSlide === TOTAL_SLIDES) {
                     setLoading(true);
                     setTimeout(() => {
+                        dispatch(setMbti(finalMbti));
+                        dispatch(setFinalPage(`/result/beforeClick`));
                         history.push(`/result/${finalMbti}`, {
                             finalMbti: finalMbti,
                         });
@@ -64,6 +70,7 @@ const Options = () => {
 
         setNum(num + 1);
         setCurrentSlide(currentSlide + 1);
+        dispatch(setFinalPage(`/options/${currentSlide}`));
         if (slideRef.current) {
             slideRef.current.style.transform += "translateX(-100vw)";
         }

@@ -6,8 +6,12 @@ import KakaoBtn from "../shareSNS/kakaoShareButton";
 import FacebookBtn from "../shareSNS/facebookShareButton";
 import TwitterBtn from "../shareSNS/twitterShareButton";
 import { useLocation, useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { setFinalPage, setCoupangButton } from "../../features/dataSlice";
 
 const Profile = ({ match }) => {
+    const SALMAL_API = process.env.REACT_APP_SALMAL_API;
     const location = useLocation();
     const history = useHistory();
     const finalMbti = location.state.finalMbti;
@@ -16,14 +20,44 @@ const Profile = ({ match }) => {
     const { countryName } = match.params;
     const nation = Countries[countryName];
     let mainColor, colorLight;
+    const dispatch = useDispatch();
+    const data = useSelector((state) => state.data);
+
+    const sendDataToSpreadsheet = async (data) => {
+        try {
+            const response = await fetch(SALMAL_API, {
+                method: "POST", // HTTP 요청 메서드 설정
+                mode: "no-cors",
+                headers: {
+                    "Content-Type": "application/json", // 내용 유형을 JSON으로 설정
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+
+            const jsonResponse = await response.json(); // 응답 본문을 JSON으로 파싱
+            console.log("Success:", jsonResponse); // 성공 응답 로그 출력
+        } catch (error) {
+            console.error("Error:", error); // 오류 로그 출력
+        }
+    };
 
     const handleButtonClick = () => {
         let curUrl = Countries[finalMbti].url;
-
         // 새 탭에서 쿠팡 링크 열기
         window.open(curUrl, "_blank", "noopener,noreferrer");
         handleUnlock(); // 버튼 클릭 시 스크롤 가능하게 변경
+        dispatch(setFinalPage(`/result/final`));
+        dispatch(setCoupangButton(true));
     };
+
+    useEffect(() => {
+        console.log(JSON.stringify(data)); // 상태가 업데이트된 후에 실행될 로직
+        sendDataToSpreadsheet(data);
+    }, [data]); // data 상태를 의존성 배열에 추가하여 data 상태가 변경될 때마다 이 useEffect가 실행되도록 함
 
     useEffect(() => {
         if (isLocked) {

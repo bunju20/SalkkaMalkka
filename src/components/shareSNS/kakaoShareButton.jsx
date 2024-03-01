@@ -1,11 +1,20 @@
 import React, { useEffect } from "react";
 import styles from "./shareIcon.module.css";
+import { useDispatch } from "react-redux";
+import { setShareButton } from "../../features/dataSlice";
 
 const KakaoShareButton = () => {
     const API_KEY = process.env.REACT_APP_API_KEY;
+    const dispatch = useDispatch();
+
     useEffect(() => {
         KakaoShareButton();
     }, []);
+
+    function click() {
+        dispatch(setShareButton("kakao"));
+    }
+
     const KakaoShareButton = () => {
         // kakao sdk script이 정상적으로 불러와졌으면 window.Kakao로 접근이 가능합니다
         if (window.Kakao) {
@@ -41,7 +50,7 @@ const KakaoShareButton = () => {
         }
     };
     return (
-        <div className="kakao-share-button">
+        <div className="kakao-share-button" onClick={click}>
             {/* Kakao share button */}
             <a href="/#" id="kakao-link-btn">
                 <img

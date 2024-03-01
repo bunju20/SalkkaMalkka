@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./shareIcon.module.css";
+import { useDispatch } from "react-redux";
+import { setShareButton } from "../../features/dataSlice";
 
 const FacebookShareButton = () => {
+    const dispatch = useDispatch();
     const copyToClipboard = () => {
+        dispatch(setShareButton("clip"));
         // 현재 페이지의 URL을 클립보드에 복사합니다.
         navigator.clipboard
             .writeText(window.location.href)
