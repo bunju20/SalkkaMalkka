@@ -31,7 +31,6 @@ const Profile = ({ match }) => {
                     Accept: "application/json",
                     "Content-Type": "application/json",
                 },
-                mode: "no-cors",
                 body: JSON.stringify(data),
             });
 
