@@ -25,7 +25,7 @@ const Profile = ({ match }) => {
 
     const sendDataToSpreadsheet = async (data) => {
         try {
-            const response = await fetch(SALMAL_API, {
+            const response = await fetch(`${SALMAL_API}`, {
                 method: "POST", // HTTP 요청 메서드 설정
                 headers: {
                     "Content-Type": "application/json", // 내용 유형을 JSON으로 설정
