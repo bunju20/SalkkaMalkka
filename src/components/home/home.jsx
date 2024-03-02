@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "../home/home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +14,7 @@ import { useSelector } from "react-redux";
 import { setFinalPage, setUid } from "../../features/dataSlice";
 import { useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
+import { sendDataToSpreadsheet } from "../../common/api/sendDate";
 
 const Home = () => {
     const uniqueID = uuidv4();
@@ -22,8 +23,8 @@ const Home = () => {
     const copyAlert = () => {
         alert("링크 생성!");
     };
-    dispatch(setFinalPage("/home"));
     dispatch(setUid(uniqueID));
+
     return (
         <div className={styles.wrap__all}>
             <div className={styles.wrapper}>

@@ -1,16 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./onboarding.module.css";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setFinalPage, setAge, setGender } from "../../features/dataSlice";
+import { sendDataToSpreadsheet } from "../../common/api/sendDate";
 
 export const OnBoarding = () => {
     const [selected, setSelected] = React.useState([]);
     const history = useHistory();
     const dispatch = useDispatch();
     dispatch(setFinalPage("/onboarding"));
+    const data = useSelector((state) => state.data);
+    useEffect(() => {
+        sendDataToSpreadsheet(data);
+    }, []);
 
     const options = [
         "1980년생",

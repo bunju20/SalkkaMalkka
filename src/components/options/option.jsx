@@ -5,6 +5,8 @@ import Questions from "../../common/api/questionsApi";
 import ProgressBar from "./progress";
 import { useDispatch } from "react-redux";
 import { setFinalPage, setMbti } from "../../features/dataSlice";
+import { useSelector } from "react-redux";
+import { sendDataToSpreadsheet } from "../../common/api/sendDate";
 
 const Options = () => {
     const [loading, setLoading] = useState(false);
@@ -14,6 +16,7 @@ const Options = () => {
     const TOTAL_SLIDES = Questions.length;
     const history = useHistory();
     const dispatch = useDispatch();
+    const data = useSelector((state) => state.data);
 
     const [mbtiCounts, setMbtiCounts] = useState({
         I: 0,
@@ -67,14 +70,18 @@ const Options = () => {
     const nextSlide = (answerIndex) => {
         const answerType = Questions[num].answers[answerIndex].type;
         updateMbtiCountAndNavigate(answerType);
-
         setNum(num + 1);
         setCurrentSlide(currentSlide + 1);
-        dispatch(setFinalPage(`/options/${currentSlide}`));
+        if (currentSlide < 12)
+            dispatch(setFinalPage(`/options/${currentSlide}`));
         if (slideRef.current) {
             slideRef.current.style.transform += "translateX(-100vw)";
         }
     };
+
+    useEffect(() => {
+        sendDataToSpreadsheet(data);
+    }, [data]);
 
     useEffect(() => {
         if (!loading && currentSlide > TOTAL_SLIDES) {
