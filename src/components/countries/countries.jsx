@@ -28,7 +28,8 @@ const Profile = ({ match }) => {
             const response = await fetch(`${SALMAL_API}`, {
                 method: "POST", // HTTP 요청 메서드 설정
                 headers: {
-                    "Content-Type": "application/json", // 내용 유형을 JSON으로 설정
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
                 },
                 mode: "no-cors",
                 body: JSON.stringify(data),
@@ -67,10 +68,6 @@ const Profile = ({ match }) => {
     const handleUnlock = () => {
         setIsLocked(false); // 상태 업데이트로 스크롤 가능하게 변경 및 그라데이션 제거
     };
-
-    if (!nation) {
-        return <div>존재하지 않는 결과입니다.</div>;
-    }
 
     // 스타일 및 색상 설정은 기존 로직 사용
     // eslint-disable-next-line default-case
