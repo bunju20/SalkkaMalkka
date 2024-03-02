@@ -11,16 +11,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useSelector } from "react-redux";
-import { setFinalPage } from "../../features/dataSlice";
+import { setFinalPage, setUid } from "../../features/dataSlice";
 import { useDispatch } from "react-redux";
+import { v4 as uuidv4 } from "uuid";
 
 const Home = () => {
+    const uniqueID = uuidv4();
     const dispatch = useDispatch();
     const url = window.location.href; // url 복사
     const copyAlert = () => {
         alert("링크 생성!");
     };
     dispatch(setFinalPage("/home"));
+    dispatch(setUid(uniqueID));
     return (
         <div className={styles.wrap__all}>
             <div className={styles.wrapper}>
